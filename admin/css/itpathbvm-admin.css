@@ -1,0 +1,152 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+* {
+    /*padding: 0px;*/
+    /*margin: 0px;*/
+    /*outline: none;*/
+    /*font: 16px "Calibri";*/
+    /*font-weight: lighter;*/
+    /*list-style-type: none;*/
+    /*-webkit-box-sizing: border-box;*/
+    /*-moz-box-sizing: border-box;*/
+    /*box-sizing: border-box;*/
+}
+
+.itpathbvm {
+    background: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    /*color: #bbb;
+    font: 16px "Calibri";
+    font-weight: lighter;    */
+    margin-left: -20px;
+    margin-right: 0;
+    margin-top: 0;padding: 20px;
+}
+.itpathbvm select{
+    width: 52%;
+}
+.itpathbvm .controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1;
+    padding: 6px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.itpathbvm button {
+    border: 0px;
+    color: #e13300;
+    margin: 4px;
+    padding: 4px 12px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.itpathbvm button.active,
+.itpathbvm button.active:hover {
+    background: #e13300;
+    color: #fff;
+}
+
+.itpathbvm button:hover {
+    background: #efefef;
+}
+
+.itpathbvm input[type=checkbox] {
+    vertical-align: middle !important;
+}
+
+.itpathbvm h1 {
+    color: #bbb;
+    font: 16px "Calibri";
+    font-size: 3em;
+    font-weight: lighter;
+    color: #363B41;
+    text-align: left;
+    display: block;
+    padding: 40px 0px;
+    margin-top: 40px;
+}
+
+.itpathbvm .tree {
+    /*margin: 2% auto;*/
+    width: 52%;
+}
+
+.itpathbvm .tree ul {
+    display: none;
+    margin: 4px auto;
+    margin-left: 6px;
+    border-left: 1px dashed #a0a0a0;
+}
+
+
+.itpathbvm .tree li {
+    padding: 5px 18px;
+    cursor: pointer;
+    vertical-align: middle;
+    background: #ececec;display: inline-block;width: 95%;
+}
+
+.itpathbvm .tree li:first-child {
+    border-radius: 3px 3px 0 0;
+}
+
+.itpathbvm .tree li:last-child {
+    border-radius: 0 0 3px 3px;
+}
+
+.itpathbvm .tree .active,
+.itpathbvm .active li {
+    background: #efefef;
+}
+
+.itpathbvm .tree label {
+    cursor: pointer;width: 250px;display: block;float: left;margin-top: 8px;
+}
+
+.itpathbvm .tree input[type=checkbox] {
+    margin: 9px 15px 0 0px;display: block;float: left;
+}
+.itpathbvm .tree input[type=number]{
+    display: block;float: left;
+}
+.itpathbvm .has > label {
+    color: #000;
+}
+
+.itpathbvm .tree .total {
+    color: #e13300;
+}
+.itpathbvm .tree li li label {
+    width: 225px;
+}
+.itpathbvm .tree li ul{margin-top: 30px;}
+.itpathbvm .tree>li:before{
+    content: "\f143";
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-family: dashicons;
+    text-decoration: inherit;
+    font-weight: 400;
+    font-style: normal;
+    vertical-align: top;
+    text-align: center;
+    transition: color .1s ease-in 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-top: 6px;
+    float: right;
+}
+.itpathbvm .tree>li.ding:before{
+    content: "\f140";
+}
